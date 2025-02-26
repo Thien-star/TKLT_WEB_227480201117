@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng Ký Xét Tuyển</title>
+    <style>
+        .dau{
+            display: flex;
+            justify-content: space-between;
+        }
+        h1 { 
+            font-family: Verdana;
+            color: red; font-weight: bold; font-size: 20; text-align: center;}
+    </style>
+</head>
+<div class="dau">
+    <div>
+        <p><b>TRƯỜNG ĐẠI HỌC BẠC LIÊU</b></p>
+        <p>KHOA KỸ THUẬT VÀ CÔNG NGHỆ</p>
+    </div>
+    <div>
+        <p><b>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</b></p>
+        <p align="center">Độc lập - Tự do - Hạnh phúc</p>
+    </div>
+    
+</div>
+<body>
+    <h1 align="center">ĐĂNG KÝ XÉT TUYỂN</h1>
+    <form>
+        <p><font face="Arial" size="2">Họ tên: <input type="text" name="hoten"></font></p>
+        
+        <p><font face="Arial" size="3">Giới tính:</font>
+        <input type="radio" name="gioitinh" value="Nam"> Nam
+        <input type="radio" name="gioitinh" value="Nữ"> Nữ<br><br>
+            
+        <p><font face="Arial" size="3">Ngành thi:</font><br>
+        <input type="radio" name="nganh" value="CNTT"> Công nghệ thông tin<br>
+        <input type="radio" name="nganh" value="MN"> Mầm non<br>
+        <input type="radio" name="nganh" value="AN"> Âm nhạc<br><br>
+            
+        <button type="submit">Đồng ý</button>
+        <button type="reset">Không đồng ý</button>
+    </form>
+</body>
+</html>
