@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang chủ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+  
+  
+        .menu {
+            display: flex;
+            list-style: none;
+            background: lightskyblue;
+        }
+        .menu li 
+            {
+            position: relative;
+            font-weight: bold;
+            padding: 10px;
+            border: 1px solid lightblue;
+            }
+  
+        .menu a 
+            {
+            display: block;
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            }
+  
+        .menu li:hover 
+            {
+            background-color: lightblue;
+            }
+        .submenu
+            {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: lightblue;
+            border: 1px solid #ccc;
+            z-index: 100;
+            }
+        .menu li:hover .submenu 
+            {
+             display: block;
+            }
+        .submenu ul,
+        .sub 
+            {
+            list-style: none;
+            }
+  
+        .submenu a,
+        .sub a {
+            display: block;
+            padding: 10px 20px;
+            width: 230px;
+            color: white;
+            }   
+  
+        .sub {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            background-color: aqua;
+            }
+        .submenu:hover .sub{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+  <ul class="menu">
+    <li><a href="">Trang Chủ</a></li>
+    <li><a href="">Giới Thiệu</a></li>
+    <li>
+      <a href="">Khoá Học</a>
+      <div class="submenu">
+        <ul>
+          <li>
+            <a href="">Tin học căn bản</a>
+            <ul class="sub">
+              <li><a href="">Microsoft Word 2010</a></li>
+              <li><a href="">Microsoft Excel 2010</a></li>
+              <li><a href="">Microsoft Powerpoint 2010</a></li>
+            </ul>
+          </li>
+          <li><a href="">Tin học phổ thông</a></li>
+          <li><a href="">Lập trình Pascal</a></li>
+          <li><a href="">Lập trình C</a></li>
+          <li><a href="">Thiết kế Website</a></li>
+          <li><a href="">Vẽ kỹ thuật AutoCAD</a></li>
+        </ul>
+      </div>
+    </li>
+    <li><a href="">Bài Viết</a></li>
+  </ul>    
+</body>
+</html>
+
