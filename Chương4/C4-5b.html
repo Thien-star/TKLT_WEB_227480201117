@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>bai_5b</title>
+</head>
+<body>
+    <script language="JavaScript">
+        var D = new Date();
+        var ngay = D.getDate();
+        var thang = D.getMonth() + 1; 
+        var nam = D.getFullYear();
+        var gio = D.getHours();
+        var phut = D.getMinutes();
+        var giay = D.getSeconds();
+
+        document.write("Hôm nay là: " + ngay + "/" + thang + "/" + nam + "<br>");
+        document.write("Bây giờ là: " + gio + " giờ " + phut + " phút " + giay + " giây.");
+    </script>
+</body>
+</html>

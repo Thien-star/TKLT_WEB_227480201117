@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>bai_6a</title>
+    </head>
+    <body>
+        <script language="JavaScript">
+            var D = new Date();
+            var NamSinh, NamHienTai;
+            NamHienTai = D.getFullYear();
+            NamSinh = prompt("Bạn sinh năm bao nhiêu? :", "");
+            if (NamSinh !== null && NamSinh !== "" && !isNaN(NamSinh)) {
+                var tuoi = NamHienTai - parseInt(NamSinh);
+                alert("Tuổi của bạn bây giờ là: " + tuoi);
+            } else {
+                alert("Vui lòng nhập năm sinh hợp lệ!");
+            }
+        </script>
+    </body>
+</html>

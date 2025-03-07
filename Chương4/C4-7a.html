@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>bai_7a</title>
+    </head>
+    <body>
+        <script language="JavaScript">
+            var D = new Date();
+            var NamSinh, NamHienTai;
+            NamHienTai = D.getFullYear(); 
+            do {
+                NamSinh = prompt("Bạn sinh năm bao nhiêu? : ", "");
+                if (isNaN(NamSinh) || NamSinh > NamHienTai) {
+                    alert("Năm sinh không hợp lệ! Vui lòng nhập lại.");
+                }
+            } while (isNaN(NamSinh) || NamSinh > NamHienTai);
+            if (!isNaN(NamSinh) && NamSinh <= NamHienTai) {
+                var tuoi = NamHienTai - NamSinh;
+                alert("Tuổi của bạn bây giờ là: " + tuoi);
+            }
+        </script>
+    </body>
+</html>
