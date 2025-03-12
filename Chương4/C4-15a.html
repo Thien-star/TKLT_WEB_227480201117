@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><b>Thay đổi</b></h1>
+    <lable for ="TieuDe">Tiêu đề: </lable>
+    <input type="text" value="Tiêu đề" id="tieude">
+
+    <lable for ="MauChu">Màu chữ: </lable>
+    <input type="text" value="Màu chữ" id="mauchu">
+
+    <lable for ="Trangthai">Trạng thái: </lable>
+    <input type="text" value="Trạng thái" id="trangthai">
+
+    <lable for ="MauNen">Màu nền: </lable>
+    <input type="text" value="Màu nền" id="maunen">
+    <button onclick="Capnhat()">Thay đổi</button>
+    
+    <script>
+        function Capnhat(){
+            let mauNen = document.getElementById("maunen").value;
+            let mauChu = document.getElementById("mauchu").value;
+            let tieuDe = document.getElementById("tieude").value;
+            let trangThai = document.getElementById("trangthai").value;
+            
+            document.title = tieuDe;
+            document.body.style.backgroundColor = mauNen;
+            document.body.style.color = mauChu;
+            window.status = trangThai;
+        }
+    </script>
+</body>
+</html>
+
