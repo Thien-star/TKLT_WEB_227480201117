@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai_20C</title>
+</head>
+<body>
+    <script language="JavaScript">
+        function tinh() {
+            var heso = parseFloat(document.getElementsByName("HeSo")[0].value);
+            var namvaolam = parseFloat(document.getElementsByName("NamVaoLam")[0].value);
+            var luongcoso = parseFloat(document.getElementsByName("LuongCoSo")[0].value);
+            
+            var luongcoban, phucap, thamnien, thanhtien;
+            var y = new Date;
+
+            luongcoban = heso * luongcoso;
+            phucap = (25 * luongcoban) / 100;
+            thamnien = y.getFullYear() - namvaolam;
+            thanhtien = luongcoban + phucap;
+            
+            document.getElementsByName("LuongCoBan")[0].value = luongcoban || "";
+            document.getElementsByName("PhuCap")[0].value = phucap || "";
+            document.getElementsByName("ThamNien")[0].value = thamnien || "";
+            document.getElementsByName("ThanhTien")[0].value = thanhtien || "";
+        }
+    </script>
+    Họ tên:<input type="text" name="HoTen" > <br>
+    Năm vào làm:<input type="text" name="NamVaoLam"> <br>
+    Hệ số:<input type="text" name="HeSo" > <br>
+    Lương cơ sở:<input type="text" name="LuongCoSo"> <br>
+    Lương cơ bản:<input type="text" name="LuongCoBan" > <br>
+    Phụ cấp:<input type="text" name="PhuCap" > <br>
+    Thâm niên:<input type="text" name="ThamNien"> <br>
+    Thành tiền:<input type="" name="ThanhTien"> <br>
+    <input type="button" value="Tính lương" onclick="tinh();">
+</body>
+</html>
+</body>
+</html>

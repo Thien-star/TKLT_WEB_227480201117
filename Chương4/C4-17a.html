@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai_17a</title>
+</head>
+<body>
+    <h2>Bạn hẫy chọn màu nền:<br></h2>
+    <select id = Mau onchange = "DoiMau();" >
+        <option value = red> Màu đỏ </option>
+        <option value = aqua> Màu xanh nhạt </option>
+        <option value = brown> Màu nâu </option>
+        <option value = blue> Màu xanh </option>
+    </select>
+    <script languae = "JavaScript">
+        function DoiMau(){
+            window.document.bgColor = Mau.value;
+        }
+    </script>
+</body>
+</html>

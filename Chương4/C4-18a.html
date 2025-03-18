@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai_18A</title>
+</head>
+<body>
+    <script langguage="javascript">
+        function kt() {
+            var sl = document.getElementsByName("noidung")[0].value.length;
+            if(parseInt(sl) > 200)
+            alert("Bạn đã gõ quá số ký tự cho phép!") 
+            else  document.getElementsByName("sokt")[0].value = sl;
+        }
+    </script>
+    Số ký tự đã gõ: <input type="text" name="sokt"> <br>
+    <textarea name="noidung" cols="50" rows="10" maxlength="201" onkeyup="kt();"></textarea>
+</body>
+</html>
